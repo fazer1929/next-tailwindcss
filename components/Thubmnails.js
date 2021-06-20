@@ -9,7 +9,7 @@ function Thubmnails({result}) {
             layout='responsive'
             height={1080}
             width={1920}
-            src={logo || `${BASE_URL}${result.backdrop_path || result.poster_path}`}
+            src={`${BASE_URL}${result.backdrop_path || result.poster_path}`}
             />
             <div>
                 <p className="truncate max-w-md">{result.overview || "How Are You Doing Bud?"}</p>
